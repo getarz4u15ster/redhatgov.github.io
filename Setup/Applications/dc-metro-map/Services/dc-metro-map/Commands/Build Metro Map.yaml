@@ -1,4 +1,13 @@
 harnessApiVersion: '1.0'
 type: OTHER
 commandUnitType: COMMAND
+commandUnits:
+- command: |-
+    oc new-app --name=dc-metro-map https://github.com/RedHatGov/openshift-workshops.git --context-dir=dc-metro-map
+
+    oc expose service dc-metro-map
+  commandUnitType: EXEC
+  deploymentType: SSH
+  name: Exec
+  scriptType: BASH
 targetToAllEnv: true
