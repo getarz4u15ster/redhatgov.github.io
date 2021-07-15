@@ -1,5 +1,0 @@
-harnessApiVersion: '1.0'
-type: SERVICE
-artifactType: OTHER
-deploymentType: SSH
-description: Run S2I build from Git Repo
